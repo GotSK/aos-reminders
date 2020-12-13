@@ -1,5 +1,5 @@
 import { IItemDescription } from 'factions/factionTypes'
-import { TRuleSource as TRuleSource } from 'meta/rule_sources'
+import { TRuleSource } from 'meta/rule_sources'
 import { TTurnWhen } from 'types/phases'
 import { TCollection } from './army'
 import { TSelectionTypes } from './selections'
