@@ -2,6 +2,7 @@ import { BeastOfChaosFaction } from 'factions/beasts_of_chaos'
 import { CitiesOfSigmarFaction } from 'factions/cities_of_sigmar'
 import { DaughtersOfKhaineFaction } from 'factions/daughters_of_khaine'
 import { DispossessedFaction } from 'factions/dispossessed'
+import { TGenericFaction } from 'factions/factionClass'
 import { FleshEaterCourtsFaction } from 'factions/flesh_eater_courts'
 import { FyreslayersFaction } from 'factions/fyreslayers'
 import { GloomspiteGitzFaction } from 'factions/gloomspite_gitz'
@@ -118,7 +119,8 @@ const FactionList = {
 }
 
 export const getFactionList = () => FactionList
-export const getFactionFromList = (factionName: TSupportedFaction) => FactionList[factionName]
+export const getFactionFromList = (factionName: TSupportedFaction): TGenericFaction =>
+  FactionList[factionName]
 
 // export const getSubFactionKeys = (factionName: TSupportedFaction) => FactionList[factionName].subFactionKeys
 
